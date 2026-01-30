@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outlet{
+            width: 110px;
+            height: 200px;
+            border: 2px solid black;
+            background-color: lightgray;
+            border-radius: 5px;
+            padding: 5px;
+            padding-top: 6px;
+        }
+        .inside{
+            color: white;
+            background-color: black;
+            font-size: 12px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body><h2>simple calculator</h2>
+    <div class="outlet">
+        <div style="padding: 5px; width: 95px; height: 20px; border: 1px solid black; background-color: black; margin-left: 2px;"> 
+            <div id="display" class="inside" style="text-align:end">0</div>           
+        </div>
+        <form>
+            <div style="margin-top: 5px; margin-left: 5px; margin-right: 5px; margin-bottom: 3px; display: flex; gap: 5px;">
+                <input id="seven" type="button" value="7" onclick="num7()">
+                <input id="eight" type="button" value="8" onclick="num8()">
+                <input id="nine" type="button" value="9" onclick="num9()">
+            </div>
+            <div style="margin-top: 5px; margin-left: 5px; margin-right: 5px; margin-bottom: 3px; display: flex; gap: 5px;">
+                <input id="four" type="button" value="4" onclick="num4()">
+                <input id="five" type="button" value="5" onclick="num5()">
+                <input id="six" type="button" value="6" onclick="num6()">
+            </div>
+            <div style="margin-top: 5px; margin-left: 5px; margin-right: 5px; margin-bottom: 3px; display: flex; gap: 5px;">
+                <input id="one" type="button" value="1" onclick="num1()">
+                <input id="two" type="button" value="2" onclick="num2()">
+                <input id="three" type="button" value="3" onclick="num3()">
+            </div>
+            <div style="margin-top: 5px; margin-left: 5px; margin-right: 5px; margin-bottom: 3px; display: flex; gap: 5px;">
+                <input id="zero" type="button" value="0" onclick="num0()">
+                <input id="equals" type="button" value="=">
+                <input id="add" type="button" value="+">
+            </div>
+            <div style="margin-top: 5px; margin-left: 5px; margin-right: 5px; margin-bottom: 3px; display: flex; gap: 5px;">
+                <input id="divide" type="button" value="/">
+                <input id="multiply" type="button" value="x">
+                <input id="subtract" type="button" value="-">
+            </div>
+            <div style="margin-top: 5px; margin-left: 5px; margin-right: 5px; margin-bottom: 3px; display: flex; gap: 5px;">
+                <input id="clear" type="button" value="C" style="background-color: black; color: white">
+            </div>
+            <script src="JS/calculator.js"></script>
+        </form>
+    </div>
+</body>
+</html>
